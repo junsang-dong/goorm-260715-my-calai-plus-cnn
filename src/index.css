@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+
+  --color-bg: #0b0d10;
+  --color-bg-elevated: #12151a;
+  --color-surface: #171b22;
+  --color-surface-2: #1e2430;
+  --color-border: #2a3140;
+  --color-ink: #f4f6f8;
+  --color-muted: #9aa3b2;
+  --color-brand: #2dd4a0;
+  --color-brand-dark: #1faf84;
+  --color-calories: #ff8a3d;
+  --color-protein: #ff5c7a;
+  --color-carbs: #f5c542;
+  --color-fat: #5b8cff;
+  --color-warn: #f0b429;
+  --color-danger: #ff6b6b;
+
+  --shadow-card: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background:
+    radial-gradient(900px 500px at 10% -10%, rgba(45, 212, 160, 0.12), transparent 55%),
+    radial-gradient(700px 400px at 100% 0%, rgba(255, 138, 61, 0.1), transparent 50%),
+    var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+::selection {
+  background: rgba(45, 212, 160, 0.35);
+}
+
+/* Hide number input spinners for cleaner cards */
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
