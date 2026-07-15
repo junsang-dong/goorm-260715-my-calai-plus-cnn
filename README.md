@@ -1,5 +1,7 @@
 # My Cal AI Plus
 
+![My Cal AI Plus — Meal History & 분석 신뢰도](docs/app-preview.jpg)
+
 > Snap · Analyze · Coach · Improve
 
 OpenAI Vision 기반 AI Native Fitness Coach — Sprint 1 MVP (+ Vision 심화/다크 UI).
